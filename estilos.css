@@ -1,0 +1,121 @@
+        body {
+            font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+        }
+
+        #texto-prueba {
+            font-size: 1.5rem;
+        }
+
+        #contenido {  /*va un # porque estamos llamando a un id*/
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100vh;  /*vh es viewport heigt, espacio disponible*/
+        }
+
+        #logo {
+            padding: 20px;
+            width: 160px;
+        }
+
+        #formulario {
+            background-color: rgba(0, 0, 0, 0.705);
+            color: white;
+            width: 330px;
+            height: 600px;
+            border-radius: 5px;
+            padding: 30px 60px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: background-color 0.3s ease-in-out;
+            /*transition: all 0.3s ease-in-out;*/
+        }
+
+        #formulario:hover {
+           background-color: rgba(92, 3, 3, 0.466);
+            border: 4px solid rgba(65, 2, 2, 0.829)
+        }
+
+        #formulario h1 {
+            font-size: 32px;
+            font-weight: 700;
+            font-family:'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+        }
+
+        
+        .control {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 1rem;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-width: 0px;
+        }
+
+        .caja-texto {
+            background-color: #333;
+        }
+
+        .boton {
+            background-color: #e50916;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 30px;
+            cursor: pointer; /*se pone el cursor dorma manito cuando paso por arriba del elemento*/
+        }
+
+        .boton:hover { /*hover hace que el elemento cambie de propiedad cuando el cursor esta sobre el*/
+            background-color: #b10713;
+            text-decoration: underline; /*decora con un subrallado*/
+        }
+
+        #help-link{
+            float:right;  /*lleva al elementohasta el borde derecho*/
+            color: rgb(192, 185, 185);
+            text-decoration: none;  
+            font-size: .8rem;
+        }
+
+        #help-link:hover {
+            text-decoration: underline;
+        }
+
+
+/*breackpoints de www.getBootstrap.com*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 575.98px) { 
+    /* redefinimos los atributos que van a cambiar con este tamaNo de pantalla */
+    #formulario {
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        padding: 5px 18px;
+        margin-top: 5px;
+    }
+    .control {
+        font-size: 0.8rem;   
+    }
+    #contenido {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    #logo {
+        width: 80px;
+        padding-bottom: 0px;
+    }
+    #texto-prueba {
+       display: none;    
+    }
+ }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {  }
